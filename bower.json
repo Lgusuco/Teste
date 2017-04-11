@@ -1,0 +1,17 @@
+{
+  "name": "guia",
+  "description": "guia para cidades",
+  "main": "server.js",
+  "authors": [
+    "Leonardo Gusmão"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

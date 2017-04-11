@@ -1,0 +1,646 @@
+<section>
+	<div ng-menu></div>
+	<div class="grid-mapa">
+		<input id="pac-input" class="controls" type="text"
+        placeholder="Informe sua Cidade">
+		<div id="map">
+		</div>
+		<div class="controle">
+			<a href="" onclick="dropPosto()" title="Posto de Gasolina"><img src="../assets/images/ico/posto.png" alt=""></a>
+			<a href="" onclick="drop()" title="Hotel"><img src="../assets/images/ico/hotel.png" alt=""></a>
+			<a href="" onclick="drop()" title="Restaurantes"><img src="../assets/images/ico/restaurante.png" alt=""></a>
+			<a href="" onclick="drop()" title="Bares"><img src="../assets/images/ico/bar.png" alt=""></a>
+			<a href="" onclick="dropShop()" title="Shoppings"><img src="../assets/images/ico/shop.png" alt=""></a>
+		</div>
+	</div>
+	<div class="bar">
+		<div class="container">
+			<!-- <h3>Filtro Detalhado</h3> -->
+			<div class="row">
+				<form class="form-horizontal">
+					<div class="col-sm-1">
+						<select>
+							<option>SP</option>
+							<option>RJ</option>
+							<option>GO</option>
+						</select>
+					</div>
+					<div class="col-sm-3">
+						<select>
+							<option>ARARAQUARA</option>
+							<option>SÃO PAULO</option>
+							<option>RIO DE JANEIRO</option>
+						</select>
+					</div>
+					<div class="col-sm-2">
+						<select>
+							<option>BARES</option>
+							<option>RESTAURANTES</option>
+							<option>OUTROS</option>
+						</select>
+					</div>
+					<div class="col-sm-5">
+						<input type="chave" class="" id="" placeholder="PALAVRA CHAVE">
+					</div>
+					<div class="col-sm-1">
+						<button><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="container acesso-container">
+		<h3>Acesso rápido <span class="glyphicon glyphicon-send" aria-hidden="true"></span></h3>
+		<div class="acesso-rapido">
+			<div class="col-xs-6 col-md-2">
+				<a href="#/anunciante">
+					<div class="acesso-content">
+						<img alt="100%x200" data-src="holder.js/100%x200" src="https://gmc.guiamais.com.br/images/restaurantes-pizza-manjericao.png" data-holder-rendered="true" style="height: 150px; width: 100%; display: block;">	
+						<div class="acesso-titulo">
+							<h3>Pizzaria</h3>	
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-xs-6 col-md-2">
+				<a href="">
+					<div class="acesso-content">
+						<img alt="100%x200" data-src="holder.js/100%x200" src="https://gmc.guiamais.com.br/images/restaurantes-pizza-manjericao.png" data-holder-rendered="true" style="height: 150px; width: 100%; display: block;">	
+						<div class="acesso-titulo">
+							<h3>Lanches</h3>	
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-xs-6 col-md-2">
+				<a href="">
+					<div class="acesso-content">
+						<img alt="100%x200" data-src="holder.js/100%x200" src="../assets/images/sushi.png" data-holder-rendered="true" style="height: 150px; width: 100%; display: block;">	
+						<div class="acesso-titulo">
+							<h3>Sushi</h3>	
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-xs-6 col-md-2">
+				<a href="">
+					<div class="acesso-content">
+						<img alt="100%x200" data-src="holder.js/100%x200" src="../assets/images/bar.png" data-holder-rendered="true" style="height: 150px; width: 100%; display: block;">	
+						<div class="acesso-titulo">
+							<h3>Bares</h3>	
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-xs-6 col-md-2">
+				<a href="">
+					<div class="acesso-content">
+						<img alt="100%x200" data-src="holder.js/100%x200" src="https://gmc.guiamais.com.br/images/restaurantes-pizza-manjericao.png" data-holder-rendered="true" style="height: 150px; width: 100%; display: block;">	
+						<div class="acesso-titulo">
+							<h3>Restaurantes</h3>	
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-xs-6 col-md-2">
+				<a href="">
+					<a href="">
+						<div class="acesso-content">
+							<img alt="100%x200" data-src="holder.js/100%x200" src="https://gmc.guiamais.com.br/images/restaurantes-pizza-manjericao.png" data-holder-rendered="true" style="height: 150px; width: 100%; display: block;">	
+							<div class="acesso-titulo">
+								<h3>Baladas</h3>	
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="promocao">
+			<div class="container">
+				<div class="row">
+					<h2>Promoções</h2>
+					<p>Aqui você encontrará as melhores promoções que cabem em seu bolço.</p>	
+					<div class="row">
+						<div class="col-sm-6 col-md-3">
+							<a href="#/anunciante">
+								<div class="thumb-promocao">
+									<img alt="100%x200" data-src="holder.js/100%x200" src="../assets/images/teste.png" data-holder-rendered="true" style="height: 250px; width: 100%; display: block;">	
+									<div class="caption">
+										<h3>Gusmão</h3>
+										<p>Roupas masculinas com 30% de desconto.</p>
+										<div class="cidade-promocao">
+											<span>Araraquara - SP</span>
+										</div>
+									</div>			
+								</div>	
+								<div class="cut-footer"></div>		
+							</a>		
+						</div>
+						<div class="col-sm-6 col-md-3">
+							<a href="">
+								<div class="thumb-promocao">
+									<img alt="100%x200" data-src="holder.js/100%x200" src="../assets/images/teste.png" data-holder-rendered="true" style="height: 250px; width: 100%; display: block;">	
+									<div class="caption">
+										<h3>Gusmão</h3>
+										<p>Roupas masculinas com 30% de desconto.</p>
+										<div class="cidade-promocao">
+											<span>Araraquara - SP</span>
+										</div>
+									</div>			
+								</div>	
+								<div class="cut-footer"></div>		
+							</a>		
+						</div>
+						<div class="col-sm-6 col-md-3">
+							<a href="">
+								<div class="thumb-promocao">
+									<img alt="100%x200" data-src="holder.js/100%x200" src="../assets/images/teste.png" data-holder-rendered="true" style="height: 250px; width: 100%; display: block;">	
+									<div class="caption">
+										<h3>Gusmão</h3>
+										<p>Roupas masculinas com 30% de desconto.</p>
+										<div class="cidade-promocao">
+											<span>Araraquara - SP</span>
+										</div>
+									</div>			
+								</div>	
+								<div class="cut-footer"></div>		
+							</a>		
+						</div>
+						<div class="col-sm-6 col-md-3">
+							<a href="">
+								<div class="thumb-promocao">
+									<img alt="100%x200" data-src="holder.js/100%x200" src="../assets/images/teste.png" data-holder-rendered="true" style="height: 250px; width: 100%; display: block;">	
+									<div class="caption">
+										<h3>Gusmão</h3>
+										<p>Roupas masculinas com 30% de desconto.</p>
+										<div class="cidade-promocao">
+											<span>Araraquara - SP</span>
+										</div>
+									</div>			
+								</div>	
+								<div class="cut-footer"></div>		
+							</a>		
+						</div>
+						<div class="col-sm-6 col-md-3">
+							<a href="">
+								<div class="thumb-promocao">
+									<img alt="100%x200" data-src="holder.js/100%x200" src="../assets/images/teste.png" data-holder-rendered="true" style="height: 250px; width: 100%; display: block;">	
+									<div class="caption">
+										<h3>Gusmão</h3>
+										<p>Roupas masculinas com 30% de desconto.</p>
+										<div class="cidade-promocao">
+											<span>Araraquara - SP</span>
+										</div>
+									</div>			
+								</div>	
+								<div class="cut-footer"></div>		
+							</a>		
+						</div>
+						<div class="col-sm-6 col-md-3">
+							<a href="">
+								<div class="thumb-promocao">
+									<img alt="100%x200" data-src="holder.js/100%x200" src="../assets/images/teste.png" data-holder-rendered="true" style="height: 250px; width: 100%; display: block;">	
+									<div class="caption">
+										<h3>Gusmão</h3>
+										<p>Roupas masculinas com 30% de desconto.</p>
+										<div class="cidade-promocao">
+											<span>Araraquara - SP</span>
+										</div>
+									</div>			
+								</div>	
+								<div class="cut-footer"></div>		
+							</a>		
+						</div>
+						<div class="col-sm-6 col-md-3">
+							<a href="">
+								<div class="thumb-promocao">
+									<img alt="100%x200" data-src="holder.js/100%x200" src="../assets/images/teste.png" data-holder-rendered="true" style="height: 250px; width: 100%; display: block;">	
+									<div class="caption">
+										<h3>Gusmão</h3>
+										<p>Roupas masculinas com 30% de desconto.</p>
+										<div class="cidade-promocao">
+											<span>Araraquara - SP</span>
+										</div>
+									</div>			
+								</div>	
+								<div class="cut-footer"></div>		
+							</a>		
+						</div>
+						<div class="col-sm-6 col-md-3">
+							<a href="">
+								<div class="thumb-promocao">
+									<img alt="100%x200" data-src="holder.js/100%x200" src="../assets/images/teste.png" data-holder-rendered="true" style="height: 250px; width: 100%; display: block;">	
+									<div class="caption">
+										<h3>Gusmão</h3>
+										<p>Roupas masculinas com 30% de desconto.</p>
+										<div class="cidade-promocao">
+											<span>Araraquara - SP</span>
+										</div>
+									</div>			
+								</div>	
+								<div class="cut-footer"></div>		
+							</a>		
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="info-home">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6">
+						<img alt="100%x200" data-src="holder.js/100%x200" src="../assets/images/visto.png" data-holder-rendered="true" style="height: 160px; width: 160px; display: block;">	
+						<h3>Seja visto, alcance novos publicos e amplie seu negócio!</h3>
+						<p>Divulgue seu comércio para toda a internet, seja visto pelo mundo.</p>
+					</div>
+					<div class="col-xs-6">
+						<img alt="100%x200" data-src="holder.js/100%x200" src="../assets/images/promocao.png" data-holder-rendered="true" style="height: 160px; width: 230px; display: block;">	
+						<h3>Aumente seus lucros e conquiste seus clientes!</h3>
+						<p>Chame a atenção do consumidor, divulgue suas promoções gratuitamente.</p>
+					</div>
+					<div class="col-xs-12">
+						<div class="btn-anunciar-content">
+							<a href="" class="btn-anunciar">QUERO ANUNCIAR</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="conteudo-destaque">
+			<div class="container">
+				<h2>Destaques</h2>
+				<p>Encontre aqui os destaques da sua cidade.</p>
+				<div class="row">
+					<div class="col-sm-6 col-md-3">
+						<a href="#/anunciante"> 
+							<div class="thumbnail">
+								<img alt="100%x200" data-src="holder.js/100%x200" src="../assets/images/logo/gusmao.png" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;">
+								<div class="caption">
+									<h3>GUSMÃO</h3>
+									<div class="cidade">
+										<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Araraquara SP
+									</div>
+									<div class="visualizacao">
+										<span class="glyphicon glyphicon-heart" aria-hidden="true"></span> 01
+										<span class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span> 10000
+									</div>
+
+								<!-- <div class="row">
+									<div class="col-xs-8">
+										<p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Araraquara/SP</p>
+									</div>
+									<div class="col-xs-4">
+										<p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> 10000</p>
+									</div>
+								</div> -->
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<a href="#/info">
+						<div class="thumbnail">
+							<img alt="100%x200" data-src="holder.js/100%x200" src="../assets/images/logo/extra.png" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;">
+							<div class="caption">
+								<h3>EXTRA</h3>
+								<div class="cidade">
+									<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Araraquara SP
+								</div>
+								<div class="visualizacao">
+									<span class="glyphicon glyphicon-heart" aria-hidden="true"></span> 01
+									<span class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span> 10000
+								</div>
+
+								<!-- <div class="row">
+									<div class="col-xs-8">
+										<p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Araraquara/SP</p>
+									</div>
+									<div class="col-xs-4">
+										<p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> 10000</p>
+									</div>
+								</div> -->
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<a href="#/info">
+						<div class="thumbnail">
+							<img alt="100%x200" data-src="holder.js/100%x200" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNTYxIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDU2MSAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MjAwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTVhYWE3NjRmZWQgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToyOHB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNWFhYTc2NGZlZCI+PHJlY3Qgd2lkdGg9IjU2MSIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIyMDcuODQzNzUiIHk9IjExMi42Ij41NjF4MjAwPC90ZXh0PjwvZz48L2c+PC9zdmc+" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;">
+							<div class="caption">
+								<h3>HABITUS</h3>
+								<div class="cidade">
+									<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Araraquara SP
+								</div>
+								<div class="visualizacao">
+									<span class="glyphicon glyphicon-heart" aria-hidden="true"></span> 01
+									<span class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span> 10000
+								</div>
+
+								<!-- <div class="row">
+									<div class="col-xs-8">
+										<p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Araraquara/SP</p>
+									</div>
+									<div class="col-xs-4">
+										<p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> 10000</p>
+									</div>
+								</div> -->
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<a href="#/info">
+						<div class="thumbnail">
+							<img alt="100%x200" data-src="holder.js/100%x200" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNTYxIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDU2MSAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MjAwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTVhYWE3NjRmZWQgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToyOHB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNWFhYTc2NGZlZCI+PHJlY3Qgd2lkdGg9IjU2MSIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIyMDcuODQzNzUiIHk9IjExMi42Ij41NjF4MjAwPC90ZXh0PjwvZz48L2c+PC9zdmc+" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;">
+							<div class="caption">
+								<h3>PATREZÃO</h3>
+								<div class="cidade">
+									<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Araraquara SP
+								</div>
+								<div class="visualizacao">
+									<span class="glyphicon glyphicon-heart" aria-hidden="true"></span> 01
+									<span class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span> 10000
+								</div>
+
+								<!-- <div class="row">
+									<div class="col-xs-8">
+										<p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Araraquara/SP</p>
+									</div>
+									<div class="col-xs-4">
+										<p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> 10000</p>
+									</div>
+								</div> -->
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<a href="#/info">
+						<div class="thumbnail">
+							<img alt="100%x200" data-src="holder.js/100%x200" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNTYxIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDU2MSAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MjAwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTVhYWE3NjRmZWQgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToyOHB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNWFhYTc2NGZlZCI+PHJlY3Qgd2lkdGg9IjU2MSIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIyMDcuODQzNzUiIHk9IjExMi42Ij41NjF4MjAwPC90ZXh0PjwvZz48L2c+PC9zdmc+" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;">
+							<div class="caption">
+								<h3>PERNAMBUCANAS</h3>
+								<div class="cidade">
+									<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Araraquara SP
+								</div>
+								<div class="visualizacao">
+									<span class="glyphicon glyphicon-heart" aria-hidden="true"></span> 01
+									<span class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span> 10000
+								</div>
+
+								<!-- <div class="row">
+									<div class="col-xs-8">
+										<p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Araraquara/SP</p>
+									</div>
+									<div class="col-xs-4">
+										<p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> 10000</p>
+									</div>
+								</div> -->
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<a href="#/info">
+						<div class="thumbnail">
+							<img alt="100%x200" data-src="holder.js/100%x200" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNTYxIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDU2MSAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MjAwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTVhYWE3NjRmZWQgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToyOHB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNWFhYTc2NGZlZCI+PHJlY3Qgd2lkdGg9IjU2MSIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIyMDcuODQzNzUiIHk9IjExMi42Ij41NjF4MjAwPC90ZXh0PjwvZz48L2c+PC9zdmc+" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;">
+							<div class="caption">
+								<h3>SESI</h3>
+								<div class="cidade">
+									<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Araraquara SP
+								</div>
+								<div class="visualizacao">
+									<span class="glyphicon glyphicon-heart" aria-hidden="true"></span> 01
+									<span class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span> 10000
+								</div>
+
+								<!-- <div class="row">
+									<div class="col-xs-8">
+										<p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Araraquara/SP</p>
+									</div>
+									<div class="col-xs-4">
+										<p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> 10000</p>
+									</div>
+								</div> -->
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<a href="#/info">
+						<div class="thumbnail">
+							<img alt="100%x200" data-src="holder.js/100%x200" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNTYxIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDU2MSAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MjAwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTVhYWE3NjRmZWQgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToyOHB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNWFhYTc2NGZlZCI+PHJlY3Qgd2lkdGg9IjU2MSIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIyMDcuODQzNzUiIHk9IjExMi42Ij41NjF4MjAwPC90ZXh0PjwvZz48L2c+PC9zdmc+" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;">
+							<div class="caption">
+								<h3>GÁS BRASILIANO</h3>
+								<div class="cidade">
+									<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Araraquara SP
+								</div>
+								<div class="visualizacao">
+									<span class="glyphicon glyphicon-heart" aria-hidden="true"></span> 01
+									<span class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span> 10000
+								</div>
+
+								<!-- <div class="row">
+									<div class="col-xs-8">
+										<p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Araraquara/SP</p>
+									</div>
+									<div class="col-xs-4">
+										<p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> 10000</p>
+									</div>
+								</div> -->
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<a href="#/info">
+						<div class="thumbnail">
+							<img alt="100%x200" data-src="holder.js/100%x200" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNTYxIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDU2MSAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MjAwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTVhYWE3NjRmZWQgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToyOHB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNWFhYTc2NGZlZCI+PHJlY3Qgd2lkdGg9IjU2MSIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIyMDcuODQzNzUiIHk9IjExMi42Ij41NjF4MjAwPC90ZXh0PjwvZz48L2c+PC9zdmc+" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;">
+							<div class="caption">
+								<h3>DXC TECNOLOGY</h3>
+								<div class="cidade">
+									<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Araraquara SP
+								</div>
+								<div class="visualizacao">
+									<span class="glyphicon glyphicon-heart" aria-hidden="true"></span> 01
+									<span class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span> 10000
+								</div>
+
+								<!-- <div class="row">
+									<div class="col-xs-8">
+										<p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Araraquara/SP</p>
+									</div>
+									<div class="col-xs-4">
+										<p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> 10000</p>
+									</div>
+								</div> -->
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<a href="#/info">
+						<div class="thumbnail">
+							<img alt="100%x200" data-src="holder.js/100%x200" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNTYxIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDU2MSAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MjAwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTVhYWE3NjRmZWQgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToyOHB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNWFhYTc2NGZlZCI+PHJlY3Qgd2lkdGg9IjU2MSIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIyMDcuODQzNzUiIHk9IjExMi42Ij41NjF4MjAwPC90ZXh0PjwvZz48L2c+PC9zdmc+" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;">
+							<div class="caption">
+								<h3>GUSMÃO</h3>
+								<div class="cidade">
+									<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Araraquara SP
+								</div>
+								<div class="visualizacao">
+									<span class="glyphicon glyphicon-heart" aria-hidden="true"></span> 01
+									<span class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span> 10000
+								</div>
+
+								<!-- <div class="row">
+									<div class="col-xs-8">
+										<p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Araraquara/SP</p>
+									</div>
+									<div class="col-xs-4">
+										<p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> 10000</p>
+									</div>
+								</div> -->
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<a href="#/info">
+						<div class="thumbnail">
+							<img alt="100%x200" data-src="holder.js/100%x200" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNTYxIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDU2MSAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MjAwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTVhYWE3NjRmZWQgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToyOHB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNWFhYTc2NGZlZCI+PHJlY3Qgd2lkdGg9IjU2MSIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIyMDcuODQzNzUiIHk9IjExMi42Ij41NjF4MjAwPC90ZXh0PjwvZz48L2c+PC9zdmc+" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;">
+							<div class="caption">
+								<h3>HABITUS</h3>
+								<div class="cidade">
+									<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Araraquara SP
+								</div>
+								<div class="visualizacao">
+									<span class="glyphicon glyphicon-heart" aria-hidden="true"></span> 01
+									<span class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span> 10000
+								</div>
+
+								<!-- <div class="row">
+									<div class="col-xs-8">
+										<p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Araraquara/SP</p>
+									</div>
+									<div class="col-xs-4">
+										<p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> 10000</p>
+									</div>
+								</div> -->
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<a href="#/info">
+						<div class="thumbnail">
+							<img alt="100%x200" data-src="holder.js/100%x200" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNTYxIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDU2MSAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MjAwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTVhYWE3NjRmZWQgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToyOHB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNWFhYTc2NGZlZCI+PHJlY3Qgd2lkdGg9IjU2MSIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIyMDcuODQzNzUiIHk9IjExMi42Ij41NjF4MjAwPC90ZXh0PjwvZz48L2c+PC9zdmc+" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;">
+							<div class="caption">
+								<h3>EXTRA</h3>
+								<div class="cidade">
+									<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Araraquara SP
+								</div>
+								<div class="visualizacao">
+									<span class="glyphicon glyphicon-heart" aria-hidden="true"></span> 01
+									<span class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span> 10000
+								</div>
+
+								<!-- <div class="row">
+									<div class="col-xs-8">
+										<p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Araraquara/SP</p>
+									</div>
+									<div class="col-xs-4">
+										<p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> 10000</p>
+									</div>
+								</div> -->
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<a href="#/info">
+						<div class="thumbnail">
+							<img alt="100%x200" data-src="holder.js/100%x200" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNTYxIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDU2MSAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MjAwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTVhYWE3NjRmZWQgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToyOHB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNWFhYTc2NGZlZCI+PHJlY3Qgd2lkdGg9IjU2MSIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIyMDcuODQzNzUiIHk9IjExMi42Ij41NjF4MjAwPC90ZXh0PjwvZz48L2c+PC9zdmc+" data-holder-rendered="true" style="height: 200px; width: 100%; display: block;">
+							<div class="caption">
+								<h3>EXTRA</h3>
+								<div class="cidade">
+									<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Araraquara SP
+								</div>
+								<div class="visualizacao">
+									<span class="glyphicon glyphicon-heart" aria-hidden="true"></span> 01
+									<span class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span> 10000
+								</div>
+
+								<!-- <div class="row">
+									<div class="col-xs-8">
+										<p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Araraquara/SP</p>
+									</div>
+									<div class="col-xs-4">
+										<p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> 10000</p>
+									</div>
+								</div> -->
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="publicidade">
+		<div class="container">
+			<div class="publicidade-content">
+				<img alt="100%x200" data-src="holder.js/100%x200" src="../assets/images/publicidade.jpg" data-holder-rendered="true" style="height: 90; width: 760px; display: block;" class="center-block">	
+			</div>
+		</div>
+	</div>
+	<div class="map">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 map-align">
+					<h2>SOBRE</h2>
+					<ul>
+						<li>O que é o GuiaOnlinee ?</li>
+						<li>Como Divulgar</li>
+						<li>Contato</li>
+					</ul>
+					<h2>PARCEIROS</h2>
+					<p>Clicke | FazPedidos</p>
+				</div>
+				<div class="col-md-6">	
+					<h2>NEWSLETTER</h2>
+					<p>Inscreva-se em nossa newsletter e receba e-mails sobre novidades e atualizações do GuiaOnlinee.</p>
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Informe seu e-mail" value="" name="cidade" id="" maxlength=""/>
+						<span class="input-group-btn">
+							<input type="button" class="btn btn-default btn-search btn-block" value="Inscrever"/>
+						</span>
+					</div>
+					<h2>SIGA-NOS</h2>
+					<nav class="midia">
+						<a href="" target="_blank" title="Facebook">
+							<img src="../assets/images/face.png" alt="Facebook">
+						</a>
+						<a href="" target="_blank" title="Facebook">
+							<img src="../assets/images/insta.png" alt="Instagran">
+						</a>
+						<a href="" target="_blank" title="Facebook">
+							<img src="../assets/images/twitter.png" alt="Twitter">
+						</a>
+					</nav>
+				</div>
+			</div>	
+		</div>
+	</div>
+	<div class="copyright">
+		<div class="container">
+			<div class="copyright-content">
+				<img src="https://livedemo00.template-help.com/wordpress_53995/wp-content/themes/theme53995-child/images/logo.png" class="center-block" alt="">
+				<p>Guiaonlinee.com.br © 2017</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<script src="assets/js/mapa.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8VDcokUxX2xt3aoQf3ycK_i8Og7u54EI&libraries=places&callback=initMap"
+        async defer></script>
